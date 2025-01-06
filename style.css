@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+}
+
+#container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#title,
+#main-menu,
+#misc-menu{
+    margin-left: 20%;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#sidebar{
+    grid-template-rows: 1fr 4fr 5fr;
+    gap: 30px;
+    background-color: #DF6D2D;
+    color: #E7FBB4;
+}
+
+#main-content{
+    grid-template-rows: 1fr 4fr;
+    background-color: #E7FBB4;
+}
+
+#header{
+    background-color: white;
+    grid-template-rows: 1fr 2fr;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+}
+
+#top{
+    grid-template-columns: 3fr 1fr;
+}
+
+#top-left{
+    grid-template-columns: 1fr 25fr;
+    align-items: center;
+}
+
+#top-right{
+    grid-template-columns: repeat(2,1fr) 3fr;
+    align-items: center;
+}
+
+#search-bar{
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #F0F0D7;
+    border: 2px solid orange;
+}
+
+#bottom{
+    grid-template-columns: 3fr 2fr;
+}
+
+#bottom-left{
+    align-content: center;
+    grid-template-columns: 1fr 8fr;
+}
+
+#bottom-right{
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid{
+    display: grid;
+}
+
+.border{
+ border: 1px solid black;
+}
+
+.padding-left{
+    padding-left: 20px;
+}
+
+.profile-small{
+    width: 30px;
+    height: 30px;
+}
+
+.profile-big{
+    width: 50px;
+    height: 50px;
+}
+
+.username{
+    font-size: 20px;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
+
+ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: orangered;
+}
